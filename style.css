@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    background-color: #354E76;
+    flex-grow: 1;
+}
+footer{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    background-color: white;
+}
+main.ply2{
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: #354E76;
+}
+main.ply{
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: #BDC391;
+}
+.column.select{
+    background-color: pink;
+}
+.column{
+    display: inline-block;
+    background-color: white;
+    border: 3px solid white;
+}
+.slot{
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 0px;
+    position: relative;
+}
+.row5{
+    position: relative;
+    transform: translateY(-1000%);
+}
+.row4{
+    position: relative;
+    transform: translateY(-2000%);
+}
+.row3{
+    position: relative;
+    transform: translateY(-3000%);
+}
+.row2{
+    position: relative;
+    transform: translateY(-4000%);
+}
+.row1{
+    position: relative;
+    transform: translateY(-5000%);
+}
+.row0{
+    position: relative;
+    transform: translateY(-6000%);
+}
+
+.slot.player1{
+    background-color: #354E76;
+    transition-property: background-color border-radius translateY;
+    border-radius: 40px;
+    transition-duration: 1.5s;
+    transform: translateY(0);
+}
+.slot.player2{
+    transition-property: border-radius background-color translateY;
+    background-color: #BDC391;
+    border-radius: 40px;
+    transition-duration: 1.5s;
+    transform: translateY(0);
+}
+.slot.winning{
+    background-color: #ff0dbf;
+}
+#button{
+    width: 200px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-self: center;
+    border-radius: 10px;
+    background-color: white;
+}
+#connect{
+    font-size: 45px;
+    font-family: helvetica;
+    color: grey;
+    align-self: center;
+    font-weight: bold;
+}
+#player1{
+    color: #BDC391;
+    position: absolute;
+    font-size: 30px;
+    font-family: helvetica;
+    top: 100px;
+    left: 10px;
+
+}
+#counter1{
+    color: #BDC391;
+    position: absolute;
+    font-size: 150px;
+    font-family: helvetica;
+    top: 250px;
+    left: 50px;
+}
+#player2{
+    color: #354E76;
+    align-self: left;
+    font-size: 30px;
+    font-family: helvetica;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+#counter2{
+    color: #354E76;
+    position: absolute;
+    font-size: 150px;
+    font-family: helvetica;
+    top: 250px;
+    right: 50px;
+}
+#restart{
+    font-size: 30px;
+    font-family: helvetica;
+    color: grey;
+    align-self: center;
+}
+#winner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    z-index: 999;
+}
+#winner.show{
+    transition-property: translateX;
+    transition-duration: 2s;
+    transform: translateX(0);
+}
+#innerwinner{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#winnertext{
+    color: black;
+    display: flex;
+    align-self: center;
+    font-size: 120px;
+}
+.winnertext{
+    color: white;
+    display: flex;
+    align-self: center;
+    font-size: 120px;
+}
