@@ -1,5 +1,5 @@
 var solts = $(".slot");
-//Player class
+//Player class hiiiiiiiiiiiiiiiii
 var player = "player1";
 //Player name display
 var playerName = prompt("Player1 Name");
